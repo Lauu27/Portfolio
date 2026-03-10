@@ -16,6 +16,7 @@
         <div class="logo-container">
             <img src="assets/img/gglogo.png" alt="Logo" class="logo">
         </div>
+
         <nav>
             <ul>
                 <li><a href="#aboutme">About Me</a></li>
@@ -24,86 +25,100 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
         <div class="gear-container">
             <button id="gear-btn"><i class="fa-solid fa-gear"></i></button>
+
             <div id="settings-menu" class="settings-menu">
+
                 <div class="language-switch">
-                    <button id="language-toggle">EN/ES</button>
+                    <button id="language-toggle">EN</button>
                 </div>
+
                 <div class="switch-container">
                     <button class="switch" id="switch">
                         <span><i class="fa-solid fa-sun"></i></span>
                         <span><i class="fa-solid fa-moon"></i></span>
                     </button>
                 </div>
+
             </div>
         </div>
+
         <div class="menu-toggle" id="menu-toggle">
             <i class="fa fa-bars"></i>
         </div>
+
     </header>
     
     <section class="aboutme" id="aboutme">
+
         <h1>Welcome to my Portfolio</h1>
+
         <img src="assets/img/yo.jpeg" alt="Profile Picture" class="Lautaro">
+
         <p class="desc">
             Hello! I'm <span class="highlight">Lautaro Casal</span>, a Higher Technician in Programming with experience in sales and customer service. 
             I enjoy building web projects and solving problems using technology. 
             Here you can find some of the projects I have developed.
         </p>
+
         <a href="assets/cv/resume.pdf" class="download-btn" download id="download-resume">
             <button><i class="fa-solid fa-circle-down"></i> Download My Resume</button>
         </a>
+
     </section>    
 
     <section class="projects" id="projects">
+
         <h2>Projects</h2>
+
         <div class="projects-container">
-            <div class="project">
-                <img src="assets/projects/pro3.png" alt="Project 1 Image" class="project-image">
+
+            <div class="project" data-date="2026">
+                <img src="assets/projects/pro3.png" alt="Project Image" class="project-image">
                 <h3>Portfolio</h3>
                 <p>Personal portfolio website developed to showcase my projects and skills.</p>
+
                 <div class="web">
                     <a href="https://github.com/Lauu27/Portfolio"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
-            <div class="project">
-                <img src="assets/projects/pro1.png" alt="Project 1 Image" class="project-image">
+            <div class="project" data-date="2025">
+                <img src="assets/projects/pro1.png" alt="Project Image" class="project-image">
                 <h3>M&M Multimedia</h3>
                 <p>Web application developed with HTML, PHP and Bootstrap, focused on dynamic content and user interaction.</p>
+
                 <div class="web">
                     <a href="https://github.com/Lauu27/MyM-Multimedia"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-    
-            <div class="project">
-                <img src="assets/projects/pro2.png" alt="Project 2 Image" class="project-image">
+
+            <div class="project" data-date="2024">
+                <img src="assets/projects/pro2.png" alt="Project Image" class="project-image">
                 <h3>Teatro Saturno</h3>
-                <p>Theater website created as a demonstration project for my programming technical degree, focused on basic web structure and layout.</p>
+                <p>Theater website created as a demonstration project for my programming technical degree.</p>
+
                 <div class="web">   
                     <a href="https://github.com/Lauu27/Theater-Saturno"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="studies" id="studies">
+
         <h2>Studies and Courses</h2>
+
         <div class="studies-container">
-            <div class="study-item">
-                <h3>Web Design Course with WordPress</h3>
-                <p>Course focused on creating and managing websites using WordPress, including integration with digital tools and platforms.</p>
-                <span>2025 | National Technological University of Buenos Aires</span>
-                <div class="technologies">
-                    <i class="fa-brands fa-wordpress"></i>
-                    <i class="fa-solid fa-database"></i>
-                </div>
-            </div>
-            <div class="study-item">
+
+            <div class="study-item" data-date="2026">
                 <h3>Higher Technician in Programming</h3>
                 <p>Tertiary technical degree focused on software development, programming logic, and web technologies.</p>
                 <span>2024 - 2026 | Teclab Higher Technical Institute</span>
+
                 <div class="technologies">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
@@ -112,20 +127,35 @@
                     <i class="fa-solid fa-database"></i>
                 </div>
             </div>
-            <div class="study-item">
+
+            <div class="study-item" data-date="2025">
+                <h3>Web Design Course with WordPress</h3>
+                <p>Course focused on creating and managing websites using WordPress, including integration with digital tools and platforms.</p>
+                <span>2025 | National Technological University of Buenos Aires</span>
+
+                <div class="technologies">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <i class="fa-solid fa-database"></i>
+                </div>
+            </div>
+
+            <div class="study-item" data-date="2023">
                 <h3>Microsoft Office Course</h3>
                 <p>Training focused on the use of Microsoft Office tools including Word, Excel and PowerPoint.</p>
                 <span>2023 | ACE Morón Educational Community</span>
+
                 <div class="technologies">
                     <i class="fa-solid fa-file-word"></i>
                     <i class="fa-solid fa-file-excel"></i>
                     <i class="fa-solid fa-file-powerpoint"></i>
                 </div>
             </div>
-            <div class="study-item">
+
+            <div class="study-item" data-date="2020">
                 <h3>Programming Course</h3>
                 <p>Introduction to programming concepts and development of applications using Visual Basic, HTML, PHP and MySQL.</p>
                 <span>2019 - 2020 | ACE Morón Educational Community</span>
+
                 <div class="technologies">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
@@ -133,27 +163,36 @@
                     <i class="fa-solid fa-database"></i>
                 </div>
             </div>
+
         </div>
     </section>
     
     <footer class="footer">
+
         <div class="footer-column">
-          <div class="socialIcons">
-            <div class="contact-title" id="contact">
-              <h4>Contact Me!</h4>
+
+            <div class="socialIcons">
+
+                <div class="contact-title" id="contact">
+                    <h4>Contact Me!</h4>
+                </div>
+
+                <div class="icons">
+                    <a href="https://www.instagram.com/laucasal_/"><i class="fa fa-instagram"></i></a>
+                    <a href="mailto:laucasal27@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://wa.me/541150184622"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://github.com/Lauu27"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/laucasal27/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
             </div>
-            <div class="icons">
-              <a href="https://www.instagram.com/laucasal_/"><i class="fa fa-instagram"></i></a>
-              <a href="mailto:laucasal27@gmail.com"><i class="fa fa-envelope"></i></a>
-              <a href="https://wa.me/541150184622"><i class="fa fa-whatsapp"></i></a>
-              <a href="https://github.com/Lauu27"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/laucasal27/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
+
         </div>
+
         <div class="footer-bottom">
-          <p>© 2026 | Designed by Lautaro Casal</p>
+            <p>© 2026 | Designed by Lautaro Casal</p>
         </div>
+
     </footer>
       
     <script src="scripts.js"></script>

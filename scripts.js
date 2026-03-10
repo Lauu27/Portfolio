@@ -102,187 +102,163 @@ document.addEventListener("DOMContentLoaded", () => {
     const translations = {
 
         en: {
-            header: {
-                aboutMe: "About Me",
-                projects: "Projects",
-                studies: "Studies",
-                contact: "Contact"
-            },
+            nav_about: "About Me",
+            nav_projects: "Projects",
+            nav_studies: "Studies",
+            nav_contact: "Contact",
 
-            aboutMe: {
-                title: "Welcome to my Portfolio",
-                description: "Hello! I'm Lautaro Casal, a Higher Technician in Programming with experience in sales and customer service. I enjoy building web projects and solving problems using technology. Here you can find some of the projects I have developed.",
-                resume: "Download My Resume"
-            },
+            about_title: "Welcome to my Portfolio",
+            about_desc: "Hello! I'm Lautaro Casal, a Higher Technician in Programming with experience in sales and customer service. I enjoy building web projects and solving problems using technology. Here you can find some of the projects I have developed.",
+            resume_btn: "Download My Resume",
 
-            projects: {
-                title: "Projects",
-                project1: {
-                    title: "Portfolio",
-                    description: "Personal portfolio website developed to showcase my projects and skills."
-                },
-                project2: {
-                    title: "M&M Multimedia",
-                    description: "Web application developed with HTML, PHP and Bootstrap, focused on dynamic content and user interaction."
-                },
-                project3: {
-                    title: "Teatro Saturno",
-                    description: "Theater website created as a demonstration project for my programming technical degree, focused on basic web structure and layout."
-                }
-            },
+            projects_title: "Projects",
+            project1_title: "Portfolio",
+            project1_desc: "Personal portfolio website developed to showcase my projects and skills.",
+            project2_title: "M&M Multimedia",
+            project2_desc: "Web application developed with HTML, PHP and Bootstrap, focused on dynamic content and user interaction.",
+            project3_title: "Teatro Saturno",
+            project3_desc: "Theater website created as a demonstration project for my programming technical degree.",
 
-            studies: {
-                title: "Studies and Courses",
-                study1: {
-                    title: "Web Design Course with WordPress",
-                    description: "Course focused on creating and managing websites using WordPress, including integration with digital tools and platforms.",
-                    span: "2025 | National Technological University of Buenos Aires"
-                },
-                study2: {
-                    title: "Higher Technician in Programming",
-                    description: "Tertiary technical degree focused on software development, programming logic, and web technologies.",
-                    span: "2024 - 2026 | Teclab Higher Technical Institute"
-                },
-                study3: {
-                    title: "Microsoft Office Course",
-                    description: "Training focused on the use of Microsoft Office tools including Word, Excel and PowerPoint.",
-                    span: "2023 | ACE Morón Educational Community"
-                },
-                study4: {
-                    title: "Programming Course",
-                    description: "Introduction to programming concepts and development of applications using Visual Basic, HTML, PHP and MySQL.",
-                    span: "2019 - 2020 | ACE Morón Educational Community"
-                }
-            },
+            studies_title: "Studies and Courses",
+            study1_title: "Higher Technician in Programming",
+            study1_desc: "Tertiary technical degree focused on software development, programming logic, and web technologies.",
+            study1_date: "2024 - 2026 | Teclab Higher Technical Institute",
 
-            footer: {
-                contact: "Contact Me!",
-                copyright: "© 2026 | Designed by Lautaro Casal"
-            }
+            study2_title: "Web Design Course with WordPress",
+            study2_desc: "Course focused on creating and managing websites using WordPress, including integration with digital tools and platforms.",
+            study2_date: "2025 | National Technological University of Buenos Aires",
+
+            study3_title: "Microsoft Office Course",
+            study3_desc: "Training focused on the use of Microsoft Office tools including Word, Excel and PowerPoint.",
+            study3_date: "2023 | ACE Morón Educational Community",
+
+            study4_title: "Programming Course",
+            study4_desc: "Introduction to programming concepts and development of applications using Visual Basic, HTML, PHP and MySQL.",
+            study4_date: "2019 - 2020 | ACE Morón Educational Community",
+
+            contact_title: "Contact Me!",
+            copyright: "© 2026 | Designed by Lautaro Casal"
         },
 
         es: {
-            header: {
-                aboutMe: "Sobre mí",
-                projects: "Proyectos",
-                studies: "Estudios",
-                contact: "Contacto"
-            },
+            nav_about: "Sobre mí",
+            nav_projects: "Proyectos",
+            nav_studies: "Estudios",
+            nav_contact: "Contacto",
 
-            aboutMe: {
-                title: "Bienvenido a mi Portafolio",
-                description: "¡Hola! Soy Lautaro Casal, Técnico Superior en Programación con experiencia en ventas y atención al cliente. Disfruto crear proyectos web y resolver problemas utilizando tecnología. Aquí puedes ver algunos de los proyectos que he desarrollado.",
-                resume: "Descargar Mi CV"
-            },
+            about_title: "Bienvenido a mi Portafolio",
+            about_desc: "¡Hola! Soy Lautaro Casal, Técnico Superior en Programación con experiencia en ventas y atención al cliente. Disfruto crear proyectos web y resolver problemas utilizando tecnología. Aquí puedes ver algunos de los proyectos que he desarrollado.",
+            resume_btn: "Descargar Mi CV",
 
-            projects: {
-                title: "Proyectos",
-                project1: {
-                    title: "Portafolio",
-                    description: "Sitio web personal creado para mostrar mis proyectos y habilidades."
-                },
-                project2: {
-                    title: "M&M Multimedia",
-                    description: "Aplicación web desarrollada con HTML, PHP y Bootstrap enfocada en contenido dinámico e interacción con el usuario."
-                },
-                project3: {
-                    title: "Teatro Saturno",
-                    description: "Sitio web de teatro creado como proyecto demostrativo para mi tecnicatura en programación."
-                }
-            },
+            projects_title: "Proyectos",
+            project1_title: "Portafolio",
+            project1_desc: "Sitio web personal creado para mostrar mis proyectos y habilidades.",
+            project2_title: "M&M Multimedia",
+            project2_desc: "Aplicación web desarrollada con HTML, PHP y Bootstrap enfocada en contenido dinámico e interacción con el usuario.",
+            project3_title: "Teatro Saturno",
+            project3_desc: "Sitio web de teatro creado como proyecto demostrativo para mi tecnicatura en programación.",
 
-            studies: {
-                title: "Estudios y Cursos",
-                study1: {
-                    title: "Curso de Diseño Web con WordPress",
-                    description: "Curso enfocado en la creación y gestión de sitios web utilizando WordPress.",
-                    span: "2025 | Universidad Tecnológica Nacional de Buenos Aires"
-                },
-                study2: {
-                    title: "Técnico Superior en Programación",
-                    description: "Carrera terciaria enfocada en desarrollo de software, lógica de programación y tecnologías web.",
-                    span: "2024 - 2026 | Instituto Técnico Superior Teclab"
-                },
-                study3: {
-                    title: "Curso de Microsoft Office",
-                    description: "Capacitación en herramientas de Microsoft Office incluyendo Word, Excel y PowerPoint.",
-                    span: "2023 | Comunidad Educativa ACE Morón"
-                },
-                study4: {
-                    title: "Curso de Programación",
-                    description: "Introducción a la programación y desarrollo de aplicaciones usando Visual Basic, HTML, PHP y MySQL.",
-                    span: "2019 - 2020 | Comunidad Educativa ACE Morón"
-                }
-            },
+            studies_title: "Estudios y Cursos",
+            study1_title: "Técnico Superior en Programación",
+            study1_desc: "Carrera terciaria enfocada en desarrollo de software, lógica de programación y tecnologías web.",
+            study1_date: "2024 - 2026 | Instituto Técnico Superior Teclab",
 
-            footer: {
-                contact: "¡Contáctame!",
-                copyright: "© 2026 | Diseñado por Lautaro Casal"
-            }
+            study2_title: "Curso de Diseño Web con WordPress",
+            study2_desc: "Curso enfocado en la creación y gestión de sitios web utilizando WordPress.",
+            study2_date: "2025 | Universidad Tecnológica Nacional de Buenos Aires",
+
+            study3_title: "Curso de Microsoft Office",
+            study3_desc: "Capacitación en herramientas de Microsoft Office incluyendo Word, Excel y PowerPoint.",
+            study3_date: "2023 | Comunidad Educativa ACE Morón",
+
+            study4_title: "Curso de Programación",
+            study4_desc: "Introducción a la programación y desarrollo de aplicaciones usando Visual Basic, HTML, PHP y MySQL.",
+            study4_date: "2019 - 2020 | Comunidad Educativa ACE Morón",
+
+            contact_title: "¡Contáctame!",
+            copyright: "© 2026 | Diseñado por Lautaro Casal"
         }
+
     };
 
-    const switchLanguage = (language) => {
+    function applyTranslations(lang) {
 
-        document.querySelector('nav a[href="#aboutme"]').textContent = translations[language].header.aboutMe;
-        document.querySelector('nav a[href="#projects"]').textContent = translations[language].header.projects;
-        document.querySelector('nav a[href="#studies"]').textContent = translations[language].header.studies;
-        document.querySelector('nav a[href="#contact"]').textContent = translations[language].header.contact;
+        const t = translations[lang];
 
-        document.querySelector(".aboutme h1").textContent = translations[language].aboutMe.title;
-        document.querySelector(".desc").textContent = translations[language].aboutMe.description;
+        document.querySelector('nav a[href="#aboutme"]').textContent = t.nav_about;
+        document.querySelector('nav a[href="#projects"]').textContent = t.nav_projects;
+        document.querySelector('nav a[href="#studies"]').textContent = t.nav_studies;
+        document.querySelector('nav a[href="#contact"]').textContent = t.nav_contact;
+
+        document.querySelector(".aboutme h1").textContent = t.about_title;
+        document.querySelector(".desc").textContent = t.about_desc;
 
         document.querySelector(".download-btn button").innerHTML =
-            `<i class="fa-solid fa-circle-down"></i> ${translations[language].aboutMe.resume}`;
+            `<i class="fa-solid fa-circle-down"></i> ${t.resume_btn}`;
 
         document.getElementById("download-resume").href =
-            language === "en" ? "assets/cv/resume.pdf" : "assets/cv/cv.pdf";
+            lang === "en" ? "assets/cv/resume.pdf" : "assets/cv/cv.pdf";
 
-        document.querySelector(".projects h2").textContent = translations[language].projects.title;
+        document.querySelector(".projects h2").textContent = t.projects_title;
 
-        const projectItems = document.querySelectorAll(".project");
+        const projects = document.querySelectorAll(".project");
 
-        projectItems[0].querySelector("h3").textContent = translations[language].projects.project1.title;
-        projectItems[0].querySelector("p").textContent = translations[language].projects.project1.description;
+        projects[0].querySelector("h3").textContent = t.project1_title;
+        projects[0].querySelector("p").textContent = t.project1_desc;
 
-        projectItems[1].querySelector("h3").textContent = translations[language].projects.project2.title;
-        projectItems[1].querySelector("p").textContent = translations[language].projects.project2.description;
+        projects[1].querySelector("h3").textContent = t.project2_title;
+        projects[1].querySelector("p").textContent = t.project2_desc;
 
-        projectItems[2].querySelector("h3").textContent = translations[language].projects.project3.title;
-        projectItems[2].querySelector("p").textContent = translations[language].projects.project3.description;
+        projects[2].querySelector("h3").textContent = t.project3_title;
+        projects[2].querySelector("p").textContent = t.project3_desc;
 
-        document.querySelector(".studies h2").textContent = translations[language].studies.title;
+        document.querySelector(".studies h2").textContent = t.studies_title;
 
-        const studyItems = document.querySelectorAll(".study-item");
+        const studies = document.querySelectorAll(".study-item");
 
-        studyItems[0].querySelector("h3").textContent = translations[language].studies.study1.title;
-        studyItems[0].querySelector("p").textContent = translations[language].studies.study1.description;
-        studyItems[0].querySelector("span").textContent = translations[language].studies.study1.span;
+        studies[0].querySelector("h3").textContent = t.study1_title;
+        studies[0].querySelector("p").textContent = t.study1_desc;
+        studies[0].querySelector("span").textContent = t.study1_date;
 
-        studyItems[1].querySelector("h3").textContent = translations[language].studies.study2.title;
-        studyItems[1].querySelector("p").textContent = translations[language].studies.study2.description;
-        studyItems[1].querySelector("span").textContent = translations[language].studies.study2.span;
+        studies[1].querySelector("h3").textContent = t.study2_title;
+        studies[1].querySelector("p").textContent = t.study2_desc;
+        studies[1].querySelector("span").textContent = t.study2_date;
 
-        studyItems[2].querySelector("h3").textContent = translations[language].studies.study3.title;
-        studyItems[2].querySelector("p").textContent = translations[language].studies.study3.description;
-        studyItems[2].querySelector("span").textContent = translations[language].studies.study3.span;
+        studies[2].querySelector("h3").textContent = t.study3_title;
+        studies[2].querySelector("p").textContent = t.study3_desc;
+        studies[2].querySelector("span").textContent = t.study3_date;
 
-        studyItems[3].querySelector("h3").textContent = translations[language].studies.study4.title;
-        studyItems[3].querySelector("p").textContent = translations[language].studies.study4.description;
-        studyItems[3].querySelector("span").textContent = translations[language].studies.study4.span;
+        studies[3].querySelector("h3").textContent = t.study4_title;
+        studies[3].querySelector("p").textContent = t.study4_desc;
+        studies[3].querySelector("span").textContent = t.study4_date;
 
-        document.querySelector(".contact-title h4").textContent = translations[language].footer.contact;
-        document.querySelector(".footer-bottom p").textContent = translations[language].footer.copyright;
-    };
+        document.querySelector(".contact-title h4").textContent = t.contact_title;
+        document.querySelector(".footer-bottom p").textContent = t.copyright;
+
+    }
 
     languageToggle.addEventListener("click", () => {
 
         currentLanguage = currentLanguage === "en" ? "es" : "en";
-
         languageToggle.textContent = currentLanguage.toUpperCase();
 
-        switchLanguage(currentLanguage);
+        applyTranslations(currentLanguage);
 
     });
+
+    function sortByDate(containerSelector, itemSelector) {
+
+        const container = document.querySelector(containerSelector);
+        const items = Array.from(container.querySelectorAll(itemSelector));
+
+        items.sort((a, b) => {
+            return b.dataset.date - a.dataset.date;
+        });
+
+        items.forEach(item => container.appendChild(item));
+    }
+
+    sortByDate(".studies-container", ".study-item");
+    sortByDate(".projects-container", ".project");
 
 });
