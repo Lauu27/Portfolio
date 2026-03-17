@@ -238,8 +238,6 @@ body.dark .settings-menu {
     margin-left: 1em;
 }
 
-/* About Me */
-
 .aboutme {
     text-align: center;
     margin-top: 20px;
@@ -251,7 +249,6 @@ body.dark .settings-menu {
     z-index: 3;
 }
 
-/* Estilo de la imagen */
 .aboutme img {
     width: 220px;
     height: 220px;
@@ -265,17 +262,17 @@ body.dark .settings-menu {
 }
 
 .aboutme .desc {
-    max-height: 0;
+    max-height: none;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     transition: max-height 0.4s ease, opacity 0.4s ease;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 20px;
     color: #333;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 body.dark .aboutme .desc {
@@ -283,8 +280,12 @@ body.dark .aboutme .desc {
 }
 
 .aboutme:hover .desc {
-    max-height: 8em;
-    opacity: 1;
+    transform: scale(1.02);
+}
+
+.download-btn {
+    display: inline-block;
+    margin: 10px 5px;
 }
 
 .download-btn button {
@@ -295,12 +296,13 @@ body.dark .aboutme .desc {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 4em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 0;
 }
 
 .download-btn button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 /* Estrellas */
@@ -342,6 +344,7 @@ body.dark .aboutme .desc {
     text-align: center;
     background-color: #f7f7f7;
     margin-bottom: 4em;
+    margin-top: 2em;
 }
 
 body.dark .projects {
@@ -350,7 +353,6 @@ body.dark .projects {
 
 h1 {
     font-size: 2rem;
-    margin-bottom: 30px;
     color: #333;
 }
 

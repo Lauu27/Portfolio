@@ -38,19 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     menuToggle.addEventListener("click", (event) => {
-
         event.stopPropagation();
         settingsMenu.classList.remove("active");
         navMenu.classList.toggle("active");
-
     });
 
     gearButton.addEventListener("click", (event) => {
-
         event.stopPropagation();
         navMenu.classList.remove("active");
         settingsMenu.classList.toggle("active");
-
     });
 
     document.addEventListener("click", closeAllMenus);
@@ -58,14 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => {
 
         if (window.innerWidth > 768) {
-
             closeAllMenus();
             navMenu.style.display = "flex";
-
         } else {
-
             navMenu.style.display = "";
-
         }
 
     });
@@ -73,10 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnSwitch = document.querySelector("#switch");
 
     if (localStorage.getItem("darkMode") === "enabled") {
-
         document.body.classList.add("dark");
         btnSwitch.classList.add("active");
-
     }
 
     btnSwitch.addEventListener("click", () => {
@@ -85,13 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
         btnSwitch.classList.toggle("active");
 
         if (document.body.classList.contains("dark")) {
-
             localStorage.setItem("darkMode", "enabled");
-
         } else {
-
             localStorage.setItem("darkMode", "disabled");
-
         }
 
     });
@@ -107,17 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
             nav_studies: "Studies",
             nav_contact: "Contact",
 
-            about_title: "Welcome to my Portfolio",
-            about_desc: "Hello! I'm Lautaro Casal, a Higher Technician in Programming with experience in sales and customer service. I enjoy building web projects and solving problems using technology. Here you can find some of the projects I have developed.",
+            about_title: "Junior Developer | Web Developer",
+            about_subtitle: "Web developer focused on building dynamic applications with HTML, PHP and JavaScript.",
+            about_desc: "Hello! I'm Lautaro Casal, a Higher Technician in Programming with experience in sales and customer service. I enjoy building web projects and solving problems using technology. Currently looking for my first opportunity in IT.",
             resume_btn: "Download My Resume",
+            github_btn: "View GitHub",
 
             projects_title: "Projects",
             project1_title: "Portfolio",
-            project1_desc: "Personal portfolio website developed to showcase my projects and skills.",
+            project1_desc: "Personal portfolio developed to showcase projects, skills and technologies.",
             project2_title: "M&M Multimedia",
-            project2_desc: "Web application developed with HTML, PHP and Bootstrap, focused on dynamic content and user interaction.",
+            project2_desc: "Dynamic web application built with HTML, PHP and Bootstrap, including interactive user features.",
             project3_title: "Teatro Saturno",
-            project3_desc: "Theater website created as a demonstration project for my programming technical degree.",
+            project3_desc: "Theater website developed as an academic project, focused on structure and responsive design.",
 
             studies_title: "Studies and Courses",
             study1_title: "Higher Technician in Programming",
@@ -146,17 +134,19 @@ document.addEventListener("DOMContentLoaded", () => {
             nav_studies: "Estudios",
             nav_contact: "Contacto",
 
-            about_title: "Bienvenido a mi Portafolio",
-            about_desc: "¡Hola! Soy Lautaro Casal, Técnico Superior en Programación con experiencia en ventas y atención al cliente. Disfruto crear proyectos web y resolver problemas utilizando tecnología. Aquí puedes ver algunos de los proyectos que he desarrollado.",
+            about_title: "Desarrollador Web Junior",
+            about_subtitle: "Desarrollador enfocado en crear aplicaciones web dinámicas con HTML, PHP y JavaScript.",
+            about_desc: "¡Hola! Soy Lautaro Casal, Técnico Superior en Programación con experiencia en ventas y atención al cliente. Disfruto crear proyectos web y resolver problemas utilizando tecnología. Actualmente busco mi primera oportunidad en IT.",
             resume_btn: "Descargar Mi CV",
+            github_btn: "Ver GitHub",
 
             projects_title: "Proyectos",
             project1_title: "Portafolio",
-            project1_desc: "Sitio web personal creado para mostrar mis proyectos y habilidades.",
+            project1_desc: "Portfolio personal desarrollado para presentar proyectos, habilidades y tecnologías.",
             project2_title: "M&M Multimedia",
-            project2_desc: "Aplicación web desarrollada con HTML, PHP y Bootstrap enfocada en contenido dinámico e interacción con el usuario.",
+            project2_desc: "Aplicación web dinámica desarrollada con HTML, PHP y Bootstrap con interacción de usuario.",
             project3_title: "Teatro Saturno",
-            project3_desc: "Sitio web de teatro creado como proyecto demostrativo para mi tecnicatura en programación.",
+            project3_desc: "Sitio web de teatro desarrollado como proyecto académico, enfocado en estructura y diseño responsive.",
 
             studies_title: "Estudios y Cursos",
             study1_title: "Técnico Superior en Programación",
@@ -190,11 +180,15 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('nav a[href="#studies"]').textContent = t.nav_studies;
         document.querySelector('nav a[href="#contact"]').textContent = t.nav_contact;
 
-        document.querySelector(".aboutme h1").textContent = t.about_title;
-        document.querySelector(".desc").textContent = t.about_desc;
+        document.getElementById("about-title").textContent = t.about_title;
+        document.getElementById("about-subtitle").textContent = t.about_subtitle;
+        document.getElementById("about-desc").textContent = t.about_desc;
 
         document.querySelector(".download-btn button").innerHTML =
             `<i class="fa-solid fa-circle-down"></i> ${t.resume_btn}`;
+
+        document.querySelector("#github-btn button").innerHTML =
+            `<i class="fa-brands fa-github"></i> ${t.github_btn}`;
 
         document.getElementById("download-resume").href =
             lang === "en" ? "assets/cv/resume.pdf" : "assets/cv/cv.pdf";
