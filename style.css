@@ -699,4 +699,10 @@ body.dark .icons a:hover,
         flex: 1 1 100%;   
         max-width: 22em;
     }
+        .aboutme .desc {
+        font-size: 0.9rem;
+        width: 90%;
+        line-height: 1.5;
+    }
+
 }

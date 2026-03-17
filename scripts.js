@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             about_title: "Junior Developer | Web Developer",
             about_subtitle: "Web developer focused on building dynamic applications with HTML, PHP and JavaScript.",
-            about_desc: "Hello! I'm Lautaro Casal, a Higher Technician in Programming with experience in sales and customer service. I enjoy building web projects and solving problems using technology. Currently looking for my first opportunity in IT.",
+            about_desc: "I'm Lautaro Casal, a junior web developer with a background in programming and customer service, seeking my first opportunity in IT to grow and contribute.",
             resume_btn: "Download My Resume",
             github_btn: "View GitHub",
 
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             about_title: "Desarrollador Web Junior",
             about_subtitle: "Desarrollador enfocado en crear aplicaciones web dinámicas con HTML, PHP y JavaScript.",
-            about_desc: "¡Hola! Soy Lautaro Casal, Técnico Superior en Programación con experiencia en ventas y atención al cliente. Disfruto crear proyectos web y resolver problemas utilizando tecnología. Actualmente busco mi primera oportunidad en IT.",
+            about_desc: "Soy Lautaro Casal, desarrollador web junior con formación en programación y experiencia en atención al cliente. Busco mi primera oportunidad en IT para aportar valor y seguir creciendo.",
             resume_btn: "Descargar Mi CV",
             github_btn: "Ver GitHub",
 
