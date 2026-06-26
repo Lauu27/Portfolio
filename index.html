@@ -1,290 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | Lautaro Casal</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/55ab9a7e05.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Lautaro Casal</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/img/gglogo.png">
+
+  <script src="https://kit.fontawesome.com/55ab9a7e05.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="dark">
 
-<div class="rain"></div>
-<div class="background"></div>
+  <div class="rain"></div>
+  <div class="background"></div>
 
-<header>
-  <div class="logo"><strong>Portfolio</strong></div>
+  <header>
 
-  <button class="menu-toggle" id="menuToggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <div class="logo"><strong>Portfolio</strong></div>
 
-  <nav id="navMenu">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#about">About</a>
-    <a href="#studies">Studies</a>
-    <a href="#contact">Contact</a>
-
-    <button id="themeBtn" class="theme-toggle">
-      <span class="sun"></span>
-      <span class="moon"></span>
-      <span class="thumb"></span>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  </nav>
-</header>
 
-<!-- HOME -->
-<section id="home" class="home">
-  <div class="home-text">
+    <nav id="navMenu">
 
-    <p class="intro">Hello, I'm</p>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#studies">Studies</a>
+      <a href="#contact">Contact</a>
 
-    <h1 class="name"><span id="typed-name"></span></h1>
-
-    <p class="desc">
-      Web developer focused on building dynamic applications with HTML, PHP and JavaScript.
-    </p>
-
-    <div class="divider"></div>
-
-    <div class="home-buttons">
-      <a href="assets/cv.pdf" download class="btn primary">
-        <i class="fa-solid fa-file-lines"></i> Download CV
-      </a>
-
-      <a href="#contact" class="btn secondary">
-        <i class="fa-solid fa-envelope"></i> Get In Touch
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-
-  <h2>Projects</h2>
-
-  <div class="projects-container">
-
-    <div class="project" data-date="2026">
-      <img src="assets/projects/pro3.png" alt="Portfolio Project" class="project-image">
-      <h3>Portfolio</h3>
-      <p>Personal portfolio developed to showcase projects, skills and technologies.</p>
-
-      <div class="web">
-        <a href="https://github.com/tuusuario" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="project" data-date="2025">
-      <img src="assets/projects/pro1.png" alt="M&M Multimedia" class="project-image">
-      <h3>M&M Multimedia</h3>
-      <p>Dynamic web application built with HTML, PHP and Bootstrap, including interactive user features.</p>
-
-      <div class="web">
-        <a href="https://github.com/Lauu27/MyM-Multimedia" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="project" data-date="2024">
-      <img src="assets/projects/pro2.png" alt="Teatro Saturno" class="project-image">
-      <h3>Teatro Saturno</h3>
-      <p>Academic project focused on structure, layout and responsive design.</p>
-
-      <div class="web">
-        <a href="https://github.com/Lauu27/Theater-Saturno" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="experience">
-  <h2>Work Experience</h2>
-
-  <div class="timeline">
-
-    <div class="item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>Administrative Sales Representative</h3>
-        <p class="company">Supra – Ramos Mejía</p>
-        <p class="date">03/2025 – 03/2026</p>
-        <ul>
-          <li>Customer service and sales (in-person & online)</li>
-          <li>Inventory control of phones and accessories</li>
-          <li>Stock management and organization</li>
-          <li>Excel and administrative software usage</li>
-          <li>Cash handling and daily closing</li>
-          <li>Office coordination tasks</li>
-          <li>Sales targets and customer follow-up</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>Sales Representative</h3>
-        <p class="company">Antuan – Moreno</p>
-        <p class="date">10/2023 – 01/2024</p>
-        <ul>
-          <li>Customer assistance and product recommendations</li>
-          <li>Stock organization and restocking</li>
-          <li>Store cleanliness and order</li>
-          <li>Team collaboration for sales goals</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-
-  <div class="about-content">
-
-    <img src="assets/img/me.jpeg" alt="Lautaro Casal">
-
-    <div class="about-text">
-      <h2>About Me</h2>
-      <div class="section-divider"></div>
-      <p>
-        Higher Technician in Programming with experience in sales, customer service, and inventory management.
-        Known for strong organizational skills, commitment, and fast learning ability.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- STUDIES -->
-<section class="studies" id="studies">
-
-  <h2>Studies and Courses</h2>
-
-  <div class="studies-container">
-
-    <div class="study-item" data-date="2026">
-      <h3>Higher Technician in Programming</h3>
-      <p>Tertiary technical degree focused on software development, programming logic, and web technologies.</p>
-      <span>2024 - 2026 | Teclab Higher Technical Institute</span>
-
-      <div class="technologies">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-js"></i>
-        <i class="fa-brands fa-php"></i>
-        <i class="fa-solid fa-database"></i>
-      </div>
-    </div>
-
-    <div class="study-item" data-date="2025">
-      <h3>Web Design Course with WordPress</h3>
-      <p>Course focused on creating and managing websites using WordPress.</p>
-      <span>2025 | UTN Buenos Aires</span>
-
-      <div class="technologies">
-        <i class="fa-brands fa-wordpress"></i>
-        <i class="fa-solid fa-database"></i>
-      </div>
-    </div>
-
-    <div class="study-item" data-date="2023">
-      <h3>Microsoft Office Course</h3>
-      <p>Training in Word, Excel and PowerPoint tools.</p>
-      <span>2023 | ACE Morón</span>
-
-      <div class="technologies">
-        <i class="fa-solid fa-file-word"></i>
-        <i class="fa-solid fa-file-excel"></i>
-        <i class="fa-solid fa-file-powerpoint"></i>
-      </div>
-    </div>
-
-    <div class="study-item" data-date="2020">
-      <h3>Programming Course</h3>
-      <p>Introduction to programming with HTML, PHP, Visual Basic and MySQL.</p>
-      <span>2019 - 2020 | ACE Morón</span>
-
-      <div class="technologies">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fa-brands fa-php"></i>
-        <i class="fa-solid fa-database"></i>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-
-  <h2>Contact</h2>
-
-  <div class="contact-container">
-
-    <!-- INFO -->
-    <div class="contact-info">
-
-      <h3>Let's work together</h3>
-
-      <p>
-        If you have a project, idea or job proposal, feel free to contact me.
-        I’ll reply as soon as possible.
-      </p>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <span>laucasal27@gmail.com</span>
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <span>+54 11 5018-4622</span>
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Morón, Buenos Aires</span>
-      </div>
-
-    </div>
-
-    <!-- FORM -->
-    <form class="contact-form">
-
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea placeholder="Your message"></textarea>
-
-      <button type="submit">
-        <i class="fa-solid fa-paper-plane"></i> Send Message
+      <button id="themeBtn" class="theme-toggle">
+        <span class="sun"></span>
+        <span class="moon"></span>
+        <span class="thumb"></span>
       </button>
 
-    </form>
+    </nav>
 
-  </div>
+  </header>
 
-</section>
+  <!-- HOME -->
+  <section id="home" class="home">
 
-<script src="script.js"></script>
+    <div class="home-text">
+
+      <p class="intro">Hello, I'm</p>
+
+      <h1 class="name">
+        <span id="typed-name"></span>
+      </h1>
+
+      <p class="desc">
+        Web developer focused on building dynamic applications with HTML, PHP and JavaScript.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="home-buttons">
+        <a href="assets/cv.pdf" download class="btn primary">
+          <i class="fa-solid fa-file-lines"></i> Download CV
+        </a>
+
+        <a href="#contact" class="btn secondary">
+          <i class="fa-solid fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project" data-date="2026">
+        <img src="assets/projects/pro3.png" class="project-image" alt="Portfolio Project">
+        <h3>Portfolio</h3>
+        <p>Personal portfolio developed to showcase projects, skills and technologies.</p>
+
+        <div class="web">
+          <a href="https://github.com/tuusuario" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project" data-date="2025">
+        <img src="assets/projects/pro1.png" class="project-image" alt="M&M Multimedia">
+        <h3>M&M Multimedia</h3>
+        <p>Dynamic web application built with HTML, PHP and Bootstrap, including interactive user features.</p>
+
+        <div class="web">
+          <a href="https://github.com/Lauu27/MyM-Multimedia" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project" data-date="2024">
+        <img src="assets/projects/pro2.png" class="project-image" alt="Teatro Saturno">
+        <h3>Teatro Saturno</h3>
+        <p>Academic project focused on structure, layout and responsive design.</p>
+
+        <div class="web">
+          <a href="https://github.com/Lauu27/Theater-Saturno" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+
+    <h2>Work Experience</h2>
+
+    <div class="timeline">
+
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+
+          <h3>Administrative Sales Representative</h3>
+          <p class="company">Supra – Ramos Mejía</p>
+          <p class="date">03/2025 – 03/2026</p>
+
+          <ul>
+            <li>Customer service and sales (in-person & online)</li>
+            <li>Inventory control of phones and accessories</li>
+            <li>Stock management and organization</li>
+            <li>Excel and administrative software usage</li>
+            <li>Cash handling and daily closing</li>
+            <li>Office coordination tasks</li>
+            <li>Sales targets and customer follow-up</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+
+          <h3>Sales Representative</h3>
+          <p class="company">Antuan – Moreno</p>
+          <p class="date">10/2023 – 01/2024</p>
+
+          <ul>
+            <li>Customer assistance and product recommendations</li>
+            <li>Stock organization and restocking</li>
+            <li>Store cleanliness and order</li>
+            <li>Team collaboration for sales goals</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+
+    <div class="about-content">
+
+      <img src="assets/img/me.jpeg" alt="Lautaro Casal">
+
+      <div class="about-text">
+
+        <h2>About Me</h2>
+        <div class="section-divider"></div>
+
+        <p>
+          Higher Technician in Programming with experience in sales, customer service, and inventory management.
+          Known for strong organizational skills, commitment, and fast learning ability.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STUDIES -->
+  <section class="studies" id="studies">
+
+    <h2>Studies and Courses</h2>
+
+    <div class="studies-container">
+
+      <div class="study-item" data-date="2026">
+        <h3>Higher Technician in Programming</h3>
+        <p>Tertiary technical degree focused on software development, programming logic, and web technologies.</p>
+        <span>2024 - 2026 | Teclab Higher Technical Institute</span>
+
+        <div class="technologies">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fa-brands fa-php"></i>
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+
+      <div class="study-item" data-date="2025">
+        <h3>Web Design Course with WordPress</h3>
+        <p>Course focused on creating and managing websites using WordPress.</p>
+        <span>2025 | UTN Buenos Aires</span>
+
+        <div class="technologies">
+          <i class="fa-brands fa-wordpress"></i>
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+
+      <div class="study-item" data-date="2023">
+        <h3>Microsoft Office Course</h3>
+        <p>Training in Word, Excel and PowerPoint tools.</p>
+        <span>2023 | ACE Morón</span>
+
+        <div class="technologies">
+          <i class="fa-solid fa-file-word"></i>
+          <i class="fa-solid fa-file-excel"></i>
+          <i class="fa-solid fa-file-powerpoint"></i>
+        </div>
+      </div>
+
+      <div class="study-item" data-date="2020">
+        <h3>Programming Course</h3>
+        <p>Introduction to programming with HTML, PHP, Visual Basic and MySQL.</p>
+        <span>2019 - 2020 | ACE Morón</span>
+
+        <div class="technologies">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fa-brands fa-php"></i>
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+
+        <h3>Let's work together</h3>
+
+        <p>
+          If you have a project, idea or job proposal, feel free to contact me.
+          I’ll reply as soon as possible.
+        </p>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>laucasal27@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+54 11 5018-4622</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Morón, Buenos Aires</span>
+        </div>
+
+      </div>
+
+      <form class="contact-form" id="contact-form">
+
+        <input type="text" name="from_name" placeholder="Your name" required>
+        <input type="email" name="from_email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message"></textarea>
+
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("8uULSMyzzNQoTyjyE");
+  </script>
+
 </body>
 
 </html>

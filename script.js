@@ -62,4 +62,45 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
   }
 
+  const elements = document.querySelectorAll(
+    "section, .project, .study-item, .item, .about-content"
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  elements.forEach(el => {
+    el.classList.add("reveal");
+    observer.observe(el);
+  });
+
+  const form = document.getElementById("contact-form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "Lautt27",
+        "template_emt5ngm",
+        this
+      ).then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      }).catch((error) => {
+        alert("Error sending message");
+        console.log(error);
+      });
+    });
+  }
+
 });
